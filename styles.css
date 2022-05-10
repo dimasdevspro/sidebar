@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+:root {
+  --body-bg-color: #dce4e3;
+  --green: #18c29c;
+  --light-green: #8ed7c6;
+  --light-grey: #dce4e3;
+  --text-color: #084236;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+  text-decoration: none;
+}
+
+html {
+  font-size: 93.75%;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  display: flex;
+}
+
+nav {
+  background-color: var(--green);
+  width: 6em;
+  height: 100vh;
+}
+
+.navbar {
+  transition: 0.8s;
+}
+
+.nav_extended {
+  display: flex;
+  background-color: var(--green);
+  width: 20em;
+  height: 100vh;
+  transition: 0.8s;
+}
+
+.menu {
+  position: relative;
+  right: 1.5em;
+  display: grid;
+  grid-template-rows: repeat(7, 2.5em);
+  gap: 3em;
+  height: 30em;
+  margin: 3em;
+  transition: 0.8s;
+}
+
+.menu img {
+  width: 2.5em;
+  height: 2.5em;
+  cursor: pointer;
+}
+
+#search {
+  display: fixed;
+}
+
+#search input {
+  width: 3.5em;
+  height: 3.5em;
+  border: none;
+  border-radius: 1.2em;
+  background-color: var(--light-grey);
+  background-image: url("./assets/search.svg");
+  background-size: 2.5em;
+  background-position: center;
+  background-repeat: no-repeat;
+  outline: none;
+}
+
+#logout {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-green);
+  width: 6em;
+  height: 6em;
+}
+
+#logout img {
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+}
+
+h1 {
+  margin: 0.5em 0 0 0.5em;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: var(--text-color);
+}
