@@ -54,17 +54,51 @@ nav {
   transition: 0.8s;
 }
 
+#menu_logo{
+display: flex;
+align-items: center;
+}
+
+.menu_logo {
+position: absolute;
+transition: .8s;
+}
+
+.menu_logo_at_right{
+right: 0;
+transition: .8s;
+}
+
+#logo {
+width: 4.5em;
+height: 4.5em;
+}
+
+.logo {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: .8s;
+}
+
+.logo_visible {
+  z-index: 9;
+  left: 0;
+  opacity: 1;
+  transition: .8s;
+}
+
 .menu img {
   width: 2.5em;
   height: 2.5em;
   cursor: pointer;
 }
 
-#search {
+.search {
   display: fixed;
 }
 
-#search input {
+.search input {
   width: 3.5em;
   height: 3.5em;
   border: none;
@@ -75,9 +109,35 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   outline: none;
+  transition: 0.8s;
 }
 
-#logout {
+.search_extended input {
+  width: 16em;
+  background-position: right;
+  transition: .8s;
+}
+
+.menubuttons {
+  display: flex;
+  width: 15em;
+  align-items: center;
+  gap: 3em;
+}
+
+.menubuttons p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  opacity: 0;
+  transition: .8s;
+}
+
+.pvisible p{
+  opacity:1;
+  transition: 4s;
+}
+.logout {
   position: absolute;
   bottom: 0;
   display: flex;
@@ -86,12 +146,28 @@ nav {
   background-color: var(--light-green);
   width: 6em;
   height: 6em;
+  transition: .8s;
 }
 
-#logout img {
+.logout img {
   position: relative;
   width: 2.5em;
   height: 2.5em;
+}
+
+.logout_avatar{
+  opacity: 0;
+  transition: .8s;
+}
+
+.logout_extended{
+  justify-content: space-around;
+  transition: .8s;
+  width: 20em;
+}
+
+.logout_avatar_visible{
+  opacity: 1;
 }
 
 h1 {

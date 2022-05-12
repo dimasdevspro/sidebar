@@ -11,30 +11,39 @@
   <body>
     <nav class="navbar">
       <div class="menu">
-      <div id="menu_img">
-        <img onclick="sidebar.moving()" src="./assets/menu.svg" alt="" />
-      </div>
-        <div id="search">
+        <div id="menu_logo">
+          <img id='logo' class="logo" src="./assets/logo.svg" alt="" srcset="" />
+          <img class="menu_logo" onclick="sidebar.moving()" src="./assets/menu.svg" alt="" />
+        </div>
+        <div class="search">
           <input type="text" />
         </div>
-        <div id="dashboard">
+        <div class="menubuttons">
           <img src="./assets/grid.svg" alt="" />
+          <p>Dashboard</p>
         </div>
-        <div id="pets">
+        <div class="menubuttons">
           <img src="./assets/pet.svg" alt="" />
+          <p>Pets</p>
         </div>
-        <div id="clients">
+        <div class="menubuttons">
           <img src="./assets/user.svg" alt="" />
+          <p>Clientes</p>
         </div>
-        <div id="vets">
+        <div class="menubuttons">
           <img src="./assets/vet.svg" alt="" />
+          <p>Vets</p>
         </div>
-        <div id="config">
+        <div class="menubuttons">
           <img src="./assets/settings.svg" alt="" />
+          <p>Config</p>
         </div>
       </div>
-      <div id="logout">
+      <div class="logout">
         <img src="./assets/log-out.svg" alt="" />
+        <div class="logout_avatar">
+          <img src="./assets/photo.jpg" alt="">
+        </div>
       </div>
     </nav>
     <h1>Dashboard</h1>
